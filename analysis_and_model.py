@@ -47,7 +47,7 @@ def analysis_and_model_page():
     # Выбор модели для обучения
     st.write('Выберите модель для обучения. Рекомендуемая модель - метод лучайного леса.')
     selected_model = st.selectbox('Вид модели', ['Логистическая регрессия',
-                                                 'Метод лучайного леса',
+                                                 'Метод случайного леса',
                                                  'Метод опорных векторов'])
 
     if st.button('Начать обучение'):
@@ -55,7 +55,7 @@ def analysis_and_model_page():
         if selected_model == 'Логистическая регрессия':
             st.session_state.model = LogisticRegression()
             st.session_state. model.fit(X_train, y_train)
-        elif selected_model == 'Метод лучайного леса':
+        elif selected_model == 'Метод случайного леса':
             st.session_state.model = RandomForestClassifier(n_estimators=100, random_state=42)
             st.session_state.model.fit(X_train, y_train)
         else:

@@ -9,7 +9,7 @@
  можно найти в [документации](https://archive.ics.uci.edu/dataset/601/predictive+maintenance+data)
  ## Установка и запуск 
 1. Клонируйте репозиторий: 
-   git clone <ссылка на репозиторий> 
+   git clone 'https://github.com/psychopathicartist/DS_course_project.git' 
 2. Установите зависимости: 
    pip install -r requirements.txt 
 3. Запустите приложение: 
